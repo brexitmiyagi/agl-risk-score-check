@@ -16,8 +16,10 @@ You need Python 3, nothing else. From any folder:
     python3 scripts/pull_partb.py
     python3 scripts/doctor_level.py
     python3 scripts/event_study.py
+    python3 scripts/deep_dives.py
+    python3 scripts/reserves_cash.py
 
-My own run is saved in results/. Before publishing I cloned this repo into an empty folder and reran every script from a different directory; all ten outputs matched the files in results/. pull_partb.py downloads about 350MB from CMS and takes several minutes. It keeps the downloads in a cache/ folder that isn't in the repo. doctor_level.py and event_study.py read from that folder.
+My own run is saved in results/. Before publishing I cloned this repo into an empty folder and reran every script from a different directory; every output matched the files in results/. pull_partb.py downloads about 350MB from CMS and takes several minutes. It keeps the downloads in a cache/ folder that isn't in the repo. doctor_level.py and event_study.py read from that folder.
 
 The spreadsheet in model/ is the full model: income statement, balance sheet and cash flow for 2023 to 2028, members by year, the 2027 consensus line by line, what's disclosed about payors and contracts, and agilon's REACH ACOs by market. Inputs are blue with their sources; change the yellow cells and the rating cell updates. model.py does the same 2027 base in Python and the two agree.
 
@@ -32,6 +34,8 @@ The spreadsheet in model/ is the full model: income statement, balance sheet and
 - doctor_level.py matches agilon's REACH clinicians to CMS's doctor-level Part B data and compares how fast their patients' risk scores grew from 2022 to 2024 with other primary care clinicians in the same state and specialty. It prints totals only. I'm not publishing a list of named doctors.
 - pull_partb.py downloads CMS's doctor-level Part B files for 2016 to 2024 (risk score, patient age, dual-eligible count, ten chronic-condition rates, practice address) and the office-visit codes 99212 to 99215.
 - event_study.py lines each clinician up on the year their ACO entered REACH and compares the change in their patients' risk scores with other REACH clinicians, both measured against peers of the same state and specialty. It gives ranges resampled three ways (by clinician, by practice address and by ACO), breaks the result down ACO by ACO, checks whether patient age, dual-eligible share, panel size and chronic-condition rates moved the same way, runs the 2022 to 2024 comparison against peers who started at a similar risk score and the higher-level office visit check, and prints the year-by-year gains so you can see whether they're slowing.
+- deep_dives.py follows up the doctor-level result: whether agilon's clinicians moved toward billing home visits, whether the rise in kidney disease diagnoses came with more in-office kidney testing, and why doctors in other REACH ACOs fell against their peers (split by ACO type, payment arrangement and entry year, plus a check on whether ACOs that rose most before entry fell most after).
+- reserves_cash.py works from agilon's own XBRL filings: receivable days and claims-payable days by quarter, prior-year reserve development each year, how much of the current year's claims were still unpaid at September 30, and operating cash flow against net income.
 - model.py has the valuation, the three 2027 paths, the peer multiples, the cash-flow check, the audit cases and my 2026 to 2028 estimates.
 
 ## Sources
@@ -41,6 +45,7 @@ The spreadsheet in model/ is the full model: income statement, balance sheet and
 - Lobbying Disclosure Act filings for client "agilon": https://lda.gov/api/v1/filings/?client_name=agilon
 - CMS Medicare Physician & Other Practitioners, by provider and by provider and service, 2022 and 2024: https://data.cms.gov/provider-summary-by-type-of-service/medicare-physician-other-practitioners
 - CMS ACO REACH PY2024 provider file (participant clinicians by ACO), from the same CMS REACH page
+- agilon's XBRL facts from SEC EDGAR, saved as data/sec_xbrl_agl.csv: https://data.sec.gov/api/xbrl/companyfacts/CIK0001831097.json
 - agilon's 10-K, 10-Qs and 8-K earnings releases on EDGAR (CIK 1831097)
 - agilon's Q1, Q2 and Q3 2026 earnings calls
 - Peer guidance from the Q3 2026 8-K releases of Privia, Astrana and Alignment
@@ -60,6 +65,8 @@ The spreadsheet in model/ is the full model: income statement, balance sheet and
 - The event study uses the 2024 roster, so a clinician who joined an ACO after its first year is lined up on the ACO's entry year, not their own. The comparison group is other REACH clinicians only; Shared Savings Program rosters are published by practice tax ID, not by clinician, so I couldn't add them.
 - CMS's chronic-condition rates come from all of a patient's claims, including the doctor's own, so they aren't fully independent of how that doctor documents. Age and dual-eligible share are. CMS rounds both to whole numbers, so the patient-mix check uses trimmed means.
 - Practice is approximated by street address and ZIP in the year before entry. agilon has only eight ACOs, so the range resampled by ACO is the widest and the most honest.
+- Kidney tests only show up under a doctor when the practice runs them in the office. Tests sent to an outside lab are billed by the lab, so the numbers understate testing, more so for practices without their own lab.
+- Receivable and claims days use the quarter's revenue and medical cost, so they move with the seasons; compare the same quarter across years. Before 2023 the fourth quarters are distorted by restatements for discontinued operations, so the table starts in 2023.
 - Part B risk scores are for traditional Medicare patients only, and a doctor's average moves if their patient mix changes.
 - The lobbying filings don't say which side agilon took on any bill.
 
