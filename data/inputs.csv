@@ -1,5 +1,5 @@
 item,value,unit,source
-price_2026_11_11,114.81,usd,Nasdaq historical and Yahoo Finance (both 114.81)
+price_2026_11_11,114.81,usd,Nasdaq historical prices and Seeking Alpha (both 114.81)
 diluted_shares_q3_2026,17.688,million,agilon 10-Q Q3 2026
 net_cash_unrestricted,209.2,usd_m,10-Q Q3 2026: cash 174.4 + securities 65.4 - debt 30.5 (restricted 72.0 excluded)
 adj_ebitda_2026_guide_mid,150,usd_m,8-K 4 Nov 2026 (145-155)
@@ -15,9 +15,8 @@ raf_q1_fy_margin_usd,50,usd_m,Q1 2026 call: think of that as $50 million for the
 raf_q2_ytd_ebitda,20,usd_m,Q2 2026 call
 raf_q2_h2_ebitda,19,usd_m,Q2 2026 call: roughly $19 million at the EBITDA line
 raf_q3_ytd_ebitda,23,usd_m,Q3 2026 call
-cons_rev_2026,5860,usd_m,Yahoo Finance analysis page 12 Nov 2026 (13 analysts)
-cons_rev_2027,6300,usd_m,Yahoo Finance (13 analysts)
-cons_eps_2027,4.95,usd,Yahoo Finance (5 analysts)
-street_avg_pt,102.25,usd,MarketBeat 12 Nov 2026 (14 ratings: 6 buy 6 hold 2 sell)
+cons_rev_2026,5870,usd_m,Seeking Alpha earnings estimates page 12 Nov 2026 (13 analysts)
+cons_rev_2027,6340,usd_m,Seeking Alpha earnings estimates 12 Nov 2026 (13 analysts; low 6000 high 6860)
+cons_eps_2027,4.95,usd,Seeking Alpha earnings estimates 12 Nov 2026 (normalized; 5 analysts; low 1.61 high 7.10)
 cms_2027_rate,4.98,pct,CMS CY2027 Final Rate Notice incl. 2.50% risk score trend
 part_c_overpayment_rate,5.51,pct,CMS FY2025 Part C improper payment report (CY2023 payments)
