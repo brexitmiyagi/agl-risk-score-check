@@ -1,0 +1,46 @@
+1. Event study, patient risk score vs same-state, same-specialty peers, change from the year before entry (pct pts, median)
+   year -5: agilon +0.35 (n= 590)  other REACH -1.37 (n=3683)
+   year -4: agilon -0.11 (n= 626)  other REACH -0.58 (n=3980)
+   year -3: agilon +0.75 (n= 677)  other REACH -0.56 (n=4369)
+   year -2: agilon +0.12 (n= 729)  other REACH -1.55 (n=4749)
+   year -1: agilon +0.00 (n=   0)  other REACH +0.00 (n=   0)
+   year +0: agilon +1.56 (n= 765)  other REACH +0.21 (n=5180)
+   year +1: agilon +3.09 (n= 760)  other REACH -0.94 (n=4824)
+   year +2: agilon +4.40 (n= 746)  other REACH -2.11 (n=4508)
+   year +3: agilon +5.20 (n= 513)  other REACH -1.72 (n=1207)
+2. Main tests with ranges resampled by clinician, by practice (same address in the year before entry) and by ACO
+   3 years before entry to the year before: agilon vs peers +0.11 (n=626); other REACH vs peers +0.58 (n=3980); gap -0.47
+      resampled by clinician: agilon vs peers -0.84 to +1.18; gap -1.73 to +0.76
+      resampled by practice : agilon vs peers -1.22 to +1.43; gap -2.06 to +0.99
+      resampled by ACO      : agilon vs peers -1.23 to +2.50; gap -2.71 to +1.90
+   year before entry to 2 years after: agilon vs peers +4.40 (n=746); other REACH vs peers -2.11 (n=4508); gap +6.51
+      resampled by clinician: agilon vs peers +3.23 to +5.93; gap +5.37 to +8.08
+      resampled by practice : agilon vs peers +2.60 to +6.42; gap +4.62 to +8.59
+      resampled by ACO      : agilon vs peers +1.59 to +7.40; gap +3.87 to +9.77
+   practices: agilon 436  ACOs: agilon 8, other REACH 107
+3. agilon by ACO: change from year before entry to 2 years after vs peers (and 3 years before)
+   HI agilon health Coastal ACO, Inc.                  entry 2022: after -7.46 (n= 30); before +10.33 (n=26); above 0: 23%
+   OH agilon health Columbus Ohio ACO, Inc. (DBA: Seni entry 2021: after +3.17 (n=218); before -0.57 (n=196); above 0: 60%
+   NC agilon health Mid-Atlantic ACO, Inc. (DBA: Senio entry 2022: after +3.84 (n= 65); before +3.48 (n=55); above 0: 60%
+   OH agilon health Northeast Ohio ACO, Inc. (DBA: Sen entry 2021: after +11.66 (n= 86); before -1.01 (n=70); above 0: 80%
+   NY agilon health Northeastern ACO, Inc. (DBA: Senio entry 2022: after +5.63 (n=115); before +4.76 (n=93); above 0: 59%
+   OH agilon health Ohio ACO, Inc. (DBA: Senior Health entry 2021: after +8.01 (n= 52); before -0.52 (n=47); above 0: 77%
+   PA agilon health Pennsylvania ACO, Inc. (DBA: Senio entry 2021: after -0.53 (n= 52); before -6.92 (n=41); above 0: 48%
+   TX agilon health Texas ACO, Inc. (DBA: Senior Healt entry 2021: after +5.88 (n=128); before -1.27 (n=98); above 0: 66%
+4. Patient mix: same window (year before entry to 2 years after), change vs peers, 5%-trimmed mean (CMS rounds age and condition rates to whole numbers)
+   risk score (log x100)                        agilon  +4.35 (practice range +2.85 to +5.88)  other REACH  -2.43
+   average of 10 chronic-condition rates, pts (includes the doctor's own codes) agilon  -0.11 (practice range -0.50 to +0.25)  other REACH  -0.54
+   diabetes rate, pts                           agilon  -0.06 (practice range -0.51 to +0.33)  other REACH  -0.17
+   heart failure rate, pts                      agilon  -0.87 (practice range -1.23 to -0.47)  other REACH  -1.38
+   COPD rate, pts                               agilon  +0.95 (practice range +0.53 to +1.33)  other REACH  -0.47
+   chronic kidney disease rate, pts             agilon  +3.46 (practice range +2.94 to +4.04)  other REACH  -0.49
+   average patient age, years                   agilon  -0.30 (practice range -0.41 to -0.19)  other REACH  -0.14
+   dual-eligible share, pts                     agilon  +0.39 (practice range -0.05 to +0.85)  other REACH  -0.38
+   patient count (log x100)                     agilon  +4.05 (practice range +1.77 to +6.65)  other REACH  -0.56
+5. 2022-24 growth vs peers who started within 0.05 of the same 2022 score
+   agilon: median excess +4.16 pts, resampled by practice +3.23 to +5.56, above matched median 68% (n=825)
+   other REACH: median excess -0.56 pts, resampled by practice -0.96 to -0.11, above matched median 48% (n=7249)
+6. Share of office visits billed at 99214/99215, median gap to same-state, same-specialty peers (pts)
+   agilon: 2019 -0.5 (n=669); 2022 -0.8 (n=801); 2024 +1.3 (n=874)
+   other REACH: 2019 +0.9 (n=5053); 2022 +1.0 (n=5788); 2024 +0.1 (n=6030)
+clinicians matched: agilon 1077 other REACH 13552

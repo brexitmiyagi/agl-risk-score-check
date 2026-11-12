@@ -1,0 +1,4 @@
+PY2021: 5 agilon ACOs, median percentile 50, above peer median 2
+PY2022: 8 agilon ACOs, median percentile 82, above peer median 7
+PY2023: 8 agilon ACOs, median percentile 81, above peer median 7
+PY2024: 8 agilon ACOs, median percentile 75, above peer median 7

@@ -1,0 +1,28 @@
+EV 1,821.6m  EV/2026 guide 12.1x
+EBITDA per point 26.0m  = $17.6/share at 12x;  margin per point (Q1 call) 45.5m
+2027 base adj. EBITDA 130.9m (2026 calibration item 35.5m)
+  gives back 1 point       EBITDA  104.9m  value $ 83.00  weight 35%
+  holds (industry trend)   EBITDA  130.9m  value $100.64  weight 45%
+  adds 1 point             EBITDA  156.9m  value $118.28  weight 20%
+probability-weighted $97.99 (-14.6%); even weights $100.64 (-12.3%); rating under 15% rule: HOLD
+consensus-implied 2027 adj. EBITDA ~200m (basic shares 17.0m, stock comp 60, D&A 27, other 24, severance 5); 2.7 points above my base
+  EPS low 1.61: EBITDA ~143m, +0.5 points
+  EPS high 7.1: EBITDA ~237m, +4.1 points
+  S&P Global net income 40m: EBITDA ~156m, +1.0 points
+  price implies 2027 EBITDA of 228m at 8.0x
+  price implies 2027 EBITDA of 152m at 12.0x
+  price implies 2027 EBITDA of 147m at 12.4x
+  price implies 2027 EBITDA of 102m at 17.9x
+  grid -1 0.35 [105, 83, 58]
+  grid 0 0.45 [123, 101, 75]
+  grid 1 0.2 [140, 118, 93]
+  Privia (PRVA)      EV   2787.8m  EV/EBITDA  17.9x
+  Astrana (ASTH)     EV   2135.5m  EV/EBITDA   8.0x
+  Alignment (ALHC)   EV   1244.4m  EV/EBITDA  12.4x
+DCF ex stock comp $97.4;  treating ~$60m stock comp as a cost $48.9
+  sample only, no extrapolation              $     0m  $  0.0/share  p=60%
+  half national rate, half passed through    $   248m  $ 14.0/share  p=30%
+  national rate, fully passed through        $   992m  $ 56.1/share  p=10%
+audit expected cost $6.3 to $9.8 a share; even weights less low end $94.33
+2026E rev 5,880  MSER 90.4%  adj EBITDA 150  net income 13  basic EPS 0.78
+2027E rev 6,111  MSER 90.9%  adj EBITDA 131  net income 15  basic EPS 0.88

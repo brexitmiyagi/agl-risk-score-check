@@ -1,0 +1,19 @@
+PY2023 joined 2021: agilon 5 haircut 3.44% vs peers (30) 2.21% | above peer median 5 of 5 | savings 10.6% vs 5.0%
+PY2023 joined 2022: agilon 3 haircut 3.74% vs peers (33) 1.24% | above peer median 3 of 3 | savings 9.6% vs 2.0%
+PY2023 listed groups, benchmark-weighted percentile within own cohort:
+   P3 Health (PIII)      79  (1 ACO)
+   agilon (AGL)          72  (8 ACOs)
+   Humana (HUM)          63  (2 ACOs)
+   Astrana (ASTH)        60  (1 ACO)
+   Clover (CLOV)         56  (1 ACO)
+   CVS Health (CVS)      55  (2 ACOs)
+   Alignment (ALHC)       3  (1 ACO)
+PY2024 joined 2021: agilon 5 haircut 1.75% vs peers (27) 1.82% | above peer median 4 of 5 | savings 9.8% vs 6.3%
+PY2024 joined 2022: agilon 3 haircut 2.57% vs peers (28) 0.83% | above peer median 3 of 3 | savings 13.8% vs 2.8%
+PY2024 listed groups, benchmark-weighted percentile within own cohort:
+   P3 Health (PIII)      88  (1 ACO)
+   agilon (AGL)          71  (8 ACOs)
+   Astrana (ASTH)        70  (1 ACO)
+   Humana (HUM)          51  (2 ACOs)
+   CVS Health (CVS)      45  (2 ACOs)
+   Alignment (ALHC)      10  (1 ACO)

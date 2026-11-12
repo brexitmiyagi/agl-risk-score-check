@@ -1,0 +1,22 @@
+PY2023: 132 ACOs, median haircut 0.91%
+  benchmark-weighted: agilon 3.53% vs all 1.51%
+  #  8   7.09%  agilon health Northeast Ohio ACO, Inc.
+  #  9   6.90%  agilon health Northeastern ACO, Inc.
+  # 17   4.20%  agilon health Pennsylvania ACO, Inc.
+  # 20   3.13%  agilon health Ohio ACO, Inc.
+  # 21   2.76%  agilon health Columbus Ohio ACO, Inc.
+  # 35   1.13%  agilon health Texas ACO, Inc.
+  # 37   1.09%  agilon health Coastal ACO, Inc.
+  # 47   0.93%  agilon health Mid-Atlantic ACO, Inc.
+PY2024: 115 ACOs, median haircut 0.83%
+  benchmark-weighted: agilon 2.00% vs all 1.11%
+  # 10   4.11%  agilon health Pennsylvania ACO, Inc.
+  # 11   3.61%  agilon health Ohio ACO, Inc.
+  # 12   2.98%  agilon health Mid-Atlantic ACO, Inc.
+  # 14   2.75%  agilon health Northeastern ACO, Inc.
+  # 18   1.92%  agilon health Northeast Ohio ACO, Inc.
+  # 23   1.42%  agilon health Columbus Ohio ACO, Inc.
+  # 44   0.94%  agilon health Coastal ACO, Inc.
+  # 45   0.93%  agilon health Texas ACO, Inc.
+P(>= 5 of 8 in top 21 of 132) = 0.0037
+P(>= 6 of 8 in top 23 of 115) = 0.0012

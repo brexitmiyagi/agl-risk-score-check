@@ -1,0 +1,13 @@
+agilon participant names 1631, matched to one NPI 1109
+office-based primary care compared: agilon 701, peers 19370
+patient risk-score growth 2022-24: agilon median 7.65%, peers 2.50%
+median excess over own state-and-specialty peers +5.01 pts; median percentile 68; above peer median 68%
+average patient risk score 2022: agilon 1.052 vs peers 1.067; 2024: 1.129 vs 1.092
+wellness-visit rate 2024: agilon 58.1% vs peers 44.7%
+  HI: agilon 20 growth 3.83% vs peers 3.35%
+  NC: agilon 24 growth 8.14% vs peers 2.60%
+  NY: agilon 120 growth 9.28% vs peers 2.36%
+  OH: agilon 349 growth 7.19% vs peers 2.50%
+  PA: agilon 51 growth 5.95% vs peers 2.16%
+  TX: agilon 137 growth 8.60% vs peers 2.83%
+bootstrap 95% range for the median excess: +4.27 to +6.03 pts
