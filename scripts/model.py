@@ -27,10 +27,9 @@ print(f"probability-weighted ${pw:.2f} ({pw/px-1:+.1%}); even weights ${ev:.2f} 
 chk = 187.1 - 48.9 - 20.4 - 5.2 - 3.7 - 16.9 - 41.2 + 32.0
 assert abs(chk - 82.8) < 0.15, chk
 other = (5.2 + 3.7 + 41.2 - 32.0) / 0.75   # recurring interest, tax, ACO and other items, annualised (~24)
-ce = I['cons_eps_2027'] * 17.0 + 60 + 27 + other + 5
-print(f"consensus-implied 2027 adj. EBITDA ~{ce:.0f}m (basic shares 17.0m, stock comp 60, D&A 27, other {other:.0f}, severance 5); {(ce-base)/per_pt:.1f} points above my base")
-for n_, eps_ in (('low', 1.61), ('high', 7.10)): print(f"  EPS {n_} {eps_}: EBITDA ~{eps_*17+116:.0f}m, {(eps_*17+116-base)/per_pt:+.1f} points")
-print(f"  S&P Global net income 40m: EBITDA ~{40+116:.0f}m, {(156-base)/per_pt:+.1f} points")
+ce = I['cons_eps_2027'] * 17.0 + 60 + 27 + other   # consensus EPS is normalized, so severance is already out
+print(f"consensus-implied 2027 adj. EBITDA ~{ce:.0f}m (normalized EPS x 17.0m shares + stock comp 60 + D&A 27 + other {other:.0f}); {(ce-base)/per_pt:.1f} points above my base")
+for n_, eps_ in (('low', 1.61), ('high', 7.10)): print(f"  EPS {n_} {eps_}: EBITDA ~{eps_*17+60+27+other:.0f}m, {(eps_*17+60+27+other-base)/per_pt:+.1f} points")
 for m in (8.0, 12.0, 12.4, 17.9): print(f"  price implies 2027 EBITDA of {(px*sh-nc)/m:.0f}m at {m}x")
 for rs, w in ((-1, .35), (0, .45), (1, .20)):
     print('  grid', rs, w, [round(val(base + rs*per_pt - (gap-1.43)*35)) for gap in (0.5, 1.43, 2.5)])
