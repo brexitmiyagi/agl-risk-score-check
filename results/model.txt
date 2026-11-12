@@ -5,10 +5,9 @@ EBITDA per point 26.0m  = $17.6/share at 12x;  margin per point (Q1 call) 45.5m
   holds (industry trend)   EBITDA  130.9m  value $100.64  weight 45%
   adds 1 point             EBITDA  156.9m  value $118.28  weight 20%
 probability-weighted $97.99 (-14.6%); even weights $100.64 (-12.3%); rating under 15% rule: HOLD
-consensus-implied 2027 adj. EBITDA ~200m (basic shares 17.0m, stock comp 60, D&A 27, other 24, severance 5); 2.7 points above my base
-  EPS low 1.61: EBITDA ~143m, +0.5 points
-  EPS high 7.1: EBITDA ~237m, +4.1 points
-  S&P Global net income 40m: EBITDA ~156m, +1.0 points
+consensus-implied 2027 adj. EBITDA ~195m (normalized EPS x 17.0m shares + stock comp 60 + D&A 27 + other 24); 2.5 points above my base
+  EPS low 1.61: EBITDA ~139m, +0.3 points
+  EPS high 7.1: EBITDA ~232m, +3.9 points
   price implies 2027 EBITDA of 228m at 8.0x
   price implies 2027 EBITDA of 152m at 12.0x
   price implies 2027 EBITDA of 147m at 12.4x
