@@ -44,3 +44,6 @@
    agilon: 2019 -0.5 (n=669); 2022 -0.8 (n=801); 2024 +1.3 (n=874)
    other REACH: 2019 +0.9 (n=5053); 2022 +1.0 (n=5788); 2024 +0.1 (n=6030)
 clinicians matched: agilon 1077 other REACH 13552
+7. Are the gains slowing? Yearly change vs peers, median of each clinician's own year-on-year change
+   all agilon: year +0: +1.56 (mean +1.62, n=765); year +1: +1.84 (mean +1.46, n=826); year +2: +1.41 (mean +1.74, n=886); year +3: +0.38 (mean +0.71, n=640)
+   agilon, 2021 entrants only: year +0: +2.49 (mean +2.16, n=546); year +1: +0.54 (mean +0.40, n=582); year +2: +2.56 (mean +2.68, n=634); year +3: +0.38 (mean +0.71, n=640)
