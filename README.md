@@ -17,7 +17,7 @@ You need Python 3, nothing else. From any folder:
     python3 scripts/doctor_level.py
     python3 scripts/event_study.py
 
-My own run is saved in results/. pull_partb.py downloads about 350MB from CMS and takes several minutes. It keeps the downloads in a cache/ folder that isn't in the repo. doctor_level.py and event_study.py read from that folder.
+My own run is saved in results/. Before publishing I cloned this repo into an empty folder and reran every script from a different directory; all ten outputs matched the files in results/. pull_partb.py downloads about 350MB from CMS and takes several minutes. It keeps the downloads in a cache/ folder that isn't in the repo. doctor_level.py and event_study.py read from that folder.
 
 The spreadsheet in model/ is the full model: income statement, balance sheet and cash flow for 2023 to 2028, members by year, the 2027 consensus line by line, what's disclosed about payors and contracts, and agilon's REACH ACOs by market. Inputs are blue with their sources; change the yellow cells and the rating cell updates. model.py does the same 2027 base in Python and the two agree.
 
@@ -31,7 +31,7 @@ The spreadsheet in model/ is the full model: income statement, balance sheet and
 - lobbying.py totals agilon's federal lobbying disclosures by year and lists every filing that names the No UPCODE Act.
 - doctor_level.py matches agilon's REACH clinicians to CMS's doctor-level Part B data and compares how fast their patients' risk scores grew from 2022 to 2024 with other primary care clinicians in the same state and specialty. It prints totals only. I'm not publishing a list of named doctors.
 - pull_partb.py downloads CMS's doctor-level Part B files for 2016 to 2024 (risk score, patient age, dual-eligible count, ten chronic-condition rates, practice address) and the office-visit codes 99212 to 99215.
-- event_study.py lines each clinician up on the year their ACO entered REACH and compares the change in their patients' risk scores with other REACH clinicians, both measured against peers of the same state and specialty. It gives ranges resampled three ways (by clinician, by practice address and by ACO), breaks the result down ACO by ACO, checks whether patient age, dual-eligible share, panel size and chronic-condition rates moved the same way, and runs the 2022 to 2024 comparison against peers who started at a similar risk score and the higher-level office visit check.
+- event_study.py lines each clinician up on the year their ACO entered REACH and compares the change in their patients' risk scores with other REACH clinicians, both measured against peers of the same state and specialty. It gives ranges resampled three ways (by clinician, by practice address and by ACO), breaks the result down ACO by ACO, checks whether patient age, dual-eligible share, panel size and chronic-condition rates moved the same way, runs the 2022 to 2024 comparison against peers who started at a similar risk score and the higher-level office visit check, and prints the year-by-year gains so you can see whether they're slowing.
 - model.py has the valuation, the three 2027 paths, the peer multiples, the cash-flow check, the audit cases and my 2026 to 2028 estimates.
 
 ## Sources
