@@ -1,0 +1,18 @@
+A.
+Home visits: services per 100 patients and share of clinicians billing any, 2019 and 2024 (same clinicians both years)
+   agilon       n=   680  per 100 patients   0.00 ->   0.00   billing any   0.6% ->   1.2%   change vs own state-specialty peers -0.01
+   other REACH  n=  3951  per 100 patients   0.25 ->   0.10   billing any   6.5% ->   5.8%   change vs own state-specialty peers -0.02
+   peers        n= 46859  per 100 patients   0.00 ->   0.00   billing any   4.5% ->   4.1%   change vs own state-specialty peers -0.03
+B.
+In-office kidney tests (82043, 82570): services per 100 patients and share of clinicians billing any, 2019 and 2024 (same clinicians both years)
+   agilon       n=   680  per 100 patients   8.61 ->  15.24   billing any  37.6% ->  46.5%   change vs own state-specialty peers +5.67
+   other REACH  n=  3951  per 100 patients   0.65 ->   0.85   billing any  10.4% ->  10.7%   change vs own state-specialty peers +0.11
+   peers        n= 46859  per 100 patients   0.00 ->   0.00   billing any   3.3% ->   3.1%   change vs own state-specialty peers -0.02
+   agilon clinicians: change in CKD rate vs peers, billing any kidney test in 2024 +3.79 pts (n=305), billing none +3.22 pts (n=328)
+C. Other REACH clinicians, change vs peers from the year before entry to 2 years after, by group (median; n)
+   ACO type: High Needs +3.88 (n=197); Standard -2.34 (n=4303)
+   capitation: PCC -2.02 (n=3731); TCC -2.50 (n=777)
+   risk arrangement: Global -2.75 (n=3578); Professional -0.22 (n=930)
+   entry year: 2021 -1.32 (n=1294); 2022 -2.58 (n=3214)
+   other REACH ACOs with 20+ clinicians: 28. Correlation between the rise in the year before entry and the change after: -0.32; slope -0.67
+   ACOs that rose more than the median before entry: after -4.22 (n=13); the rest: after +1.04 (n=15)
