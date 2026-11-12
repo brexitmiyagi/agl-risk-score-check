@@ -180,3 +180,11 @@ for g in ('agilon', 'other REACH'):
         out.append(f'{y} {st.median(gaps):+.1f} (n={len(gaps)})')
     print(f'   {g}: ' + '; '.join(out))
 print('clinicians matched: agilon', sum(v == 'agilon' for v in group.values()), 'other REACH', sum(v == 'other REACH' for v in group.values()))
+print('7. Are the gains slowing? Yearly change vs peers, median of each clinician\'s own year-on-year change')
+for label, cohort in (('all agilon', (2021, 2022)), ('agilon, 2021 entrants only', (2021,))):
+    out = []
+    for k in range(0, 4):
+        v = [change(n, 'risk', k - 1, k) for n in group if group[n] == 'agilon' and entry[n] in cohort]
+        v = [x for x in v if x is not None]
+        if len(v) >= 30: out.append(f'year {k:+d}: {st.median(v):+.2f} (mean {tmean(v):+.2f}, n={len(v)})')
+    print(f'   {label}: ' + '; '.join(out))
