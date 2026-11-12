@@ -1,6 +1,7 @@
 import json, os, urllib.request, urllib.parse, concurrent.futures as cf, time
 # Downloads CMS Part B data for primary care clinicians in the six states where agilon has REACH ACOs:
-# by provider for 2016 to 2024 (with patient age, dual share and chronic-condition rates), and office-visit codes 99212 to 99215 for 2019, 2022 and 2024. About 350MB, cached in ../cache.
+# by provider for 2016 to 2024 (with patient age, dual share and chronic-condition rates), plus office-visit codes 99212 to 99215,
+# home-visit codes and two in-office kidney tests (urine albumin 82043, urine creatinine 82570) for 2019, 2022 and 2024. About 350MB, cached in ../cache.
 HERE = os.path.dirname(os.path.abspath(__file__))
 C = os.environ.get('AGL_CACHE', os.path.join(HERE, '..', 'cache')); os.makedirs(C, exist_ok=True)
 PROV = {2016:'2691839a-99fb-45a1-9bd9-86905ba975cc',2017:'44ea2789-993f-4d55-ac44-ed7f160b58fa',2018:'900850df-c9a9-47ce-a9e0-d0ceae5a811f',2019:'6a53afe5-1cbc-4b33-9dc8-926ee532dc66',2020:'29d799aa-c660-44fe-a51a-72c4b3e661ac',2021:'44e0a489-666c-4ea4-a1a2-360b6cdc19db',2022:'21555c17-ec1b-4e74-b2c6-925c6cbb3147',2023:'8ba584c6-a43a-4b0b-a35a-eb9a59e3a571',2024:'8889d81e-2ee7-448f-8713-f071038289b5'}
@@ -33,6 +34,10 @@ def job(kind, y, s, x):
             rows += [{'Rndrng_NPI': r['Rndrng_NPI'], 'Tot_Srvcs': r['Tot_Srvcs']} for r in api(SERV[y], {'Rndrng_Prvdr_State_Abrvtn': s, 'HCPCS_Cd': x, 'Rndrng_Prvdr_Type': t})]
     json.dump(rows, open(p + '.tmp', 'w')); os.replace(p + '.tmp', p); return p
 jobs = [('prov', y, s, t) for y in PROV for s in ST for t in TY] + [('serv', y, s, c) for y in SERV for s in ST for c in ('99212','99213','99214','99215')]
+# home visits (2019 codes include the domiciliary series merged into home visits in 2023) and in-office kidney tests
+HOME = ['99341','99342','99343','99344','99345','99347','99348','99349','99350','99334','99335','99336','99337']
+LABS = ['82043','82570']
+jobs += [('serv', y, s, c) for y in SERV for s in ST for c in HOME + LABS]
 with cf.ThreadPoolExecutor(12) as ex:
     fs = [ex.submit(job, *j) for j in jobs]
     done = 0
